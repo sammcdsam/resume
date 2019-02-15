@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+% \documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+% \usepackage{fontspec}
+% \setmainfont{Ubuntu Mono}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+% 3E0097
+\definecolor{VividPurple}{HTML}{500000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2A2A2A}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\newcommand{\gitlab}[1]{\printinfo{\faGitlab}{#1}}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sam McDevitt}
+\tagline{Junior at Mississippi State University}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:sam1123@msstate.edu}{sam1123@msstate.edu}}
+  \phone{(601)-668-6782}
+  \location{Starkville, MS}
+  \linkedin{\href{https://www.linkedin.com/in/sammcdevitt/}{https://www.linkedin.com/in/sammcdevitt/}} \
+  \printinfo{\faShield}{U.S. Citizen}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+\cvsection[sidebar]{Experience}
+
+\cvevent{Laboratory Teaching Assistant }{Mississippi State University - Department of Electrical and Computer Engineering}{January 2019 -- Present}{Starkville, MS}
+\begin{itemize}
+\item Assisted students with lab assignments using Microchip’s MPLAB, the PIC24, and assembly programming 
+\item Experienced with debugging other peoples code and hardware in order to help students submit a working lab. 
+\end{itemize}
+
+\divider
+
+\cvevent{Undergraduate Researcher}{Mississippi State University - Institute for Clean Energy Technologies}{August 2017 -- Present}{Starkville, MS}
+\begin{itemize}
+\item Designed, printed, assembling, and debugging circuit boards for remote system controls and powering autonomous robots.  
+\item Developed firmware in C for system controls through the Microchip IDE. 
+\item Improved radiation detector readings by writing python scripts to record data. 
+\end{itemize}
+\divider
+
+\cvevent{Computer Engineering Intern}{Kopis Mobile}{May 2017 -- August 2017}{Flowood, MS}
+\begin{itemize}
+\item Simplified inventory management by creating a python program that could create inventory items in a database and in an Orcad library by web scrapping. 
+\item Updated and fixed errors within tables of an Odoo ERP inventory database. 
+\item Integrated the ERP database into SolidWorks by creating an add-in that would pull 3D models from the database, and place the parts in the SolidWorks assembly project
+
+\end{itemize}
+
+\cvsection{Leadership Experience}
+% https://github.com/liantze/AltaCV/blob/0bafa18846c7651bc8c5a9215685d4c56fba5f84/altacv.cls#L131
+% https://www.sharelatex.com/learn/Hyperlinks
+\cvproject{}{Electrical and Computer Engineering Ambassador - Vice Chair}
+\begin{itemize}
+\item Liaison between department and students
+\item Provide lab tours for visiting groups and potential students 
+\item Meet with ECE Department Advisory board faculty candidates.
+\end{itemize}
+
+\cvproject{}{IEEE Publicity Chair and Recruiting Coordinator}
+\begin{itemize}
+\item Designed flyers and advertise IEEE events. 
+\item Recruit new students to join the Mississippi State Chapter of IEEE
+\end{itemize}
+
+\cvproject{}{First Technical Challenge Judge}
+\begin{itemize}
+    \item Interviewed teams at FIRST competitions in order to determine which team is the best fit for an award
+    \item Determined which teams should be awarded with a panel of other judges. 
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employee \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+% \cvsection{A Work Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/13em/accent!30/Business Planning and Strategy implementation, 
+%   25/9em/accent!60/Resolving issues with project teams \& stakeholders,
+%   5/12em/accent!10/Budget Management, 
+%   20/12em/accent!40/Stakeholder Management,
+%   5/8em/accent!20/In-House Business development,
+%   30/9em/accent/Leading and motivating project members that their work has meaning,
+%   5/8em/accent!20/Networking
+% }
+
+
+\clearpage
+
+
+\end{document}
